@@ -1,16 +1,3 @@
-/*---------------------Начало var--------------------*/
-
-.op {
-    border: 1px solid #eb9a9a;
-}
-
-.d-f {
-    display: flex;
-    align-items: center;
-}
-
-/*---------------------Конец var--------------------*/
-
 /*---------------------Начало global--------------------*/
 
 html {
@@ -44,6 +31,7 @@ body {
     transition: 0.3s all;
     cursor: pointer;
 }
+
 .btn_feedback span {
     display: block;
     font-size: 1.6rem;
@@ -51,11 +39,13 @@ body {
     font-weight: 700;
     transform: skew(20deg);
 }
-.btn_feedback:hover{
+
+.btn_feedback:hover {
     margin-bottom: 10px;
     box-shadow: 0.8rem 0.8rem 1rem var(--bl);
 }
-.btn_feedback:active{
+
+.btn_feedback:active {
     background-color: var(--ye);
 }
 
@@ -102,20 +92,27 @@ header {
     gap: 3rem;
 }
 
-.header_menu ul a{
+.header_contact a,
+.header_menu ul a {
     display: block;
     transition: 0.3s all;
 }
+
 .header_menu-activ,
-.header_menu ul a:hover{
+.header_contact a:hover,
+.header_menu ul a:hover {
     color: var(--ye);
 }
-.header_menu ul a:active{
+
+.header_contact a:active,
+.header_menu ul a:active {
     transform: scale(1.5);
 }
-.header_menu-activ{
+
+.header_menu-activ {
     pointer-events: none;
 }
+
 /*---------------------Конец header--------------------*/
 
 /*---------------------Начало main--------------------*/
@@ -131,8 +128,90 @@ main {
 /*---------------------Начало footer--------------------*/
 
 footer {
+    position: relative;
     grid-area: F;
     align-self: end;
+    background-color: var(--ye);
+    border-top: 2.5rem solid var(--bl);
+    font-family: henders, sans-serif;
+    font-size: 2rem;
+    padding: 1rem 0 0 0;
 }
 
+footer .container {
+    justify-content: space-between;
+}
+
+.footer_logo {
+    text-align: center;
+}
+
+.footer_logo-img {
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+
+.footer_map {
+    width: 50%;
+}
+.footer_map iframe{
+    width: 100%;
+    height: 15rem;
+}
+.footer_contact-tel {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.footer_contact-soc {
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer_contact a{    
+    transition: 0.5s all;
+}
+
+.footer_contact a:hover{    
+    filter: invert(100%);
+}
+
+.footer_contact a:active{    
+    transform: scale(1.5);
+}
+
+.contact_soc {
+    width: 4rem;
+    height: 4rem;
+    background-size: cover;
+}
+
+.contact_soc-vb {
+    background-image: url('../../assets/icon/vb.png');
+}
+.contact_soc-wt {
+    background-image: url('../../assets/icon/wt.png');
+}
+.contact_soc-tt {
+    background-image: url('../../assets/icon/tt.png');
+}
+.contact_soc-in {
+    background-image: url('../../assets/icon/ig.png');
+}
+.copy{
+    margin-top: 1rem;
+}
+.copy p{
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 0.95rem;
+}
+
+.autor{
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    font-size: 1rem;
+}
 /*---------------------Конец footer--------------------*/
