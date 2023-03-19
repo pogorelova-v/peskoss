@@ -1,0 +1,13 @@
+:root{
+    --ye: #ffd000;
+    --bl: #000000;
+    --wh: #ffffff;
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'henders';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../assets/fonts/handelsonsix_cyr_six.otf');
+  }

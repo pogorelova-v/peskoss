@@ -1,0 +1,138 @@
+/*---------------------Начало var--------------------*/
+
+.op {
+    border: 1px solid #eb9a9a;
+}
+
+.d-f {
+    display: flex;
+    align-items: center;
+}
+
+/*---------------------Конец var--------------------*/
+
+/*---------------------Начало global--------------------*/
+
+html {
+    font-size: 0.833333333vw;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        'H'
+        'M'
+        'F';
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.container {
+    width: 80rem;
+    margin: 0 auto;
+}
+
+.btn_feedback {
+    min-width: 15rem;
+    min-height: 2.5rem;
+    transform: skew(-20deg);
+    border: 0.3rem solid #000;
+    box-shadow: 0.5rem 0.5rem 1rem var(--bl);
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.btn_feedback span {
+    display: block;
+    font-size: 1.6rem;
+    font-family: henders, sans-serif;
+    font-weight: 700;
+    transform: skew(20deg);
+}
+.btn_feedback:hover{
+    margin-bottom: 10px;
+    box-shadow: 0.8rem 0.8rem 1rem var(--bl);
+}
+.btn_feedback:active{
+    background-color: var(--ye);
+}
+
+/*---------------------Конец globsl--------------------*/
+
+/*---------------------Начало header--------------------*/
+
+header {
+    position: relative;
+    grid-area: H;
+    align-self: start;
+    background-color: var(--ye);
+    color: var(--wh);
+    font-family: henders, sans-serif;
+}
+
+.header_contact-wrap,
+.header_menu-wrap {
+    height: 2.5rem;
+    background-color: var(--bl);
+}
+
+.header_contact {
+    justify-content: end;
+    gap: 3rem;
+}
+
+.header_lg_fb {
+    justify-content: space-between;
+}
+
+.header_logo {
+    background-color: var(--wh);
+    padding: 0 4rem;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.header_logo-img {
+    height: 5rem;
+}
+
+.header_menu ul {
+    justify-content: center;
+    gap: 3rem;
+}
+
+.header_menu ul a{
+    display: block;
+    transition: 0.3s all;
+}
+.header_menu-activ,
+.header_menu ul a:hover{
+    color: var(--ye);
+}
+.header_menu ul a:active{
+    transform: scale(1.5);
+}
+.header_menu-activ{
+    pointer-events: none;
+}
+/*---------------------Конец header--------------------*/
+
+/*---------------------Начало main--------------------*/
+
+main {
+    position: relative;
+    grid-area: M;
+    align-self: center;
+}
+
+/*---------------------Конец main--------------------*/
+
+/*---------------------Начало footer--------------------*/
+
+footer {
+    grid-area: F;
+    align-self: end;
+}
+
+/*---------------------Конец footer--------------------*/
