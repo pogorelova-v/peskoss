@@ -1,0 +1,127 @@
+@media (max-width: 1400px) {
+    html {
+        font-size: 1vw;
+    }    
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 1.2vw;
+    }    
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 1.4vw;
+    }
+
+    .container {
+        width: 70rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 1.8vw;
+    }
+
+    .container {
+        width: 50rem;
+    }
+
+    /*---------------------Начало footer--------------------*/
+
+    footer {
+        font-size: 1.8rem;
+        padding: 1rem 0 1.5rem 0;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+    }
+
+    .footer_logo {
+        width: 40%;
+    }
+
+    .footer_map {
+        width: 60%;
+    }
+    
+    .footer_contact {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1rem;
+    }
+    .footer_contact-tel {
+        margin-bottom: 0;
+    }
+
+    .footer_contact-soc {
+        justify-content: space-between;
+    }
+
+    .footer_contact a{    
+        transition: 0.5s all;
+    }
+
+    .copy{
+        margin-top: 0;
+    }
+    .copy p{
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 0.95rem;
+    }
+    /*---------------------Конец footer--------------------*/
+
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 3.4vw;
+    }
+
+    .container {
+        width: 100%;
+    }
+    .header_contact{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .header_contact a:last-child{
+        display: none;
+    }
+
+    .header_lg_fb{
+        justify-content: center;
+    }
+
+    .header_feedback{
+        display: none;
+    }
+    .header_menu{
+        display: none;  /*!!!!!!!!!!*/
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    .footer_logo{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .footer_map{
+        width: 100%;
+    }
+    .footer_contact{
+        flex-direction: column;
+        width: auto;
+    }
+    .footer_contact-tel{
+        margin-bottom: 1rem;
+    }
+}
