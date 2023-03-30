@@ -1,13 +1,13 @@
 @media (max-width: 1400px) {
     html {
         font-size: 1vw;
-    }    
+    }
 }
 
 @media (max-width: 1024px) {
     html {
         font-size: 1.2vw;
-    }    
+    }
 }
 
 @media (max-width: 900px) {
@@ -47,7 +47,7 @@
     .footer_map {
         width: 60%;
     }
-    
+
     .footer_contact {
         width: 100%;
         display: flex;
@@ -55,6 +55,7 @@
         justify-content: space-around;
         margin: 1rem;
     }
+
     .footer_contact-tel {
         margin-bottom: 0;
     }
@@ -63,18 +64,20 @@
         justify-content: space-between;
     }
 
-    .footer_contact a{    
+    .footer_contact a {
         transition: 0.5s all;
     }
 
-    .copy{
+    .copy {
         margin-top: 0;
     }
-    .copy p{
+
+    .copy p {
         text-align: center;
         font-size: 0.9rem;
         line-height: 0.95rem;
     }
+
     /*---------------------Конец footer--------------------*/
 
 }
@@ -87,41 +90,61 @@
     .container {
         width: 100%;
     }
-    .header_contact{
+
+    .header_contact {
         justify-content: center;
         flex-wrap: wrap;
     }
-    .header_contact a:last-child{
+
+    .header_contact a:first-child {
         display: none;
     }
 
-    .header_lg_fb{
+    .header_lg_fb {
         justify-content: center;
     }
 
-    .header_feedback{
+    .header_menu-wrap {
+        height: 3rem;
+    }
+
+    .header_menu_burg-btn_wrap {
+        display: flex;
+    }
+
+    .btn_feedback {
         display: none;
     }
-    .header_menu{
-        display: none;  /*!!!!!!!!!!*/
+
+    .header_menu {
+        display: none;
+        /*!!!!!!!!!!*/
     }
 
     footer .container {
         flex-direction: column;
     }
 
-    .footer_logo{
+    .footer_logo {
         width: 100%;
         margin-bottom: 1rem;
     }
-    .footer_map{
+
+    .footer_map {
         width: 100%;
     }
-    .footer_contact{
+
+    .footer_contact {
         flex-direction: column;
         width: auto;
     }
-    .footer_contact-tel{
+
+    .footer_contact-tel {
         margin-bottom: 1rem;
     }
+
+    .btn_feedback-mini {
+        display: block;
+    }
+
 }

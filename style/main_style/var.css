@@ -21,3 +21,23 @@
     display: flex;
     align-items: center;
 }
+
+.d-n{
+    display: none;
+}
+
+.p-fix{
+    position: fixed;
+}
+
+@keyframes mail_me {
+    0%{          
+        filter: invert(0%);
+    }
+    50%{          
+        filter: invert(100%);
+    }
+    100%{          
+        filter: invert(0%);
+    }
+}
