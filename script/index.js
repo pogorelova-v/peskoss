@@ -14,6 +14,12 @@ $('.close_form').click(function () {
     $('.form_wrap').fadeOut(300);
 })
 
+
+$('#formMessage').on('input', function(){
+	this.style.height = '1px';
+	this.style.height = (this.scrollHeight + 6) + 'px'; 
+});
+
 //-----------------------Бургер меню
 
 $('.header_menu_burg-btn').click(function () {
@@ -42,3 +48,4 @@ if ($(window).width() < 576) {
         }
     });
 }
+
