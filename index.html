@@ -28,6 +28,7 @@
     <meta property="og:locale" content="ru_RU">
     <meta property="og:title" content="PESKOSS | Пескоструйная обработка">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/index.css">
 
     <title>PESKOSS | Пескоструйная обработка</title>
@@ -37,7 +38,6 @@
 <body>
 
     <header>
-        <h1>Пескоструйная обработка и малярные работы по НИжегородской области</h1>
         <div class="header_contact-wrap d-f">
             <div class="container">
                 <div class="header_contact d-f">
@@ -79,8 +79,8 @@
                     <ul class="header_menu_burg-list d-f">
                         <li class="header_menu-activ"><a href="#">Главная</a></li>
                         <li><a href="#">Фото</a></li>
-                        <li><a href="#">Цены</a></li>
                         <li><a href="#">О нас</a></li>
+                        <li><a href="#">Цены</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
@@ -90,162 +90,702 @@
 
     <main>
 
-        <section id="main_page">
-
-            <section class="main_sandblast">
-                <div class="banner_wrap">
-                    <div class="banner_sand">
-                        <div class="banner_text">
-                            <p>Пескоструйная обработка/очистка металла, дерева, бетона и кирпича от 140₽/м<sup>2</sup></p>
-                        </div>
-                    </div>
-                    <div class="banner_paint">
-                        <div class="banner_text">
-                            <p>Покраска любых поверхностей, с высокой поизводительностью, от 100м<sup>2</sup></p>
-                        </div>
-                    </div>
+        <section class="marketing_wrap">
+            <video class="marketing-video" playsinline autoplay muted loop poster="assets/img/fon.jpg">
+                <source src="assets/video/fon.mp4" type="video/webm">
+                К сожалению, Ваш браузер не может воспроизвессти видео, попробуйте открыть страницу в другом браузере.
+            </video>
+            <div class="marketing_container">
+                <div class="marketing">
+                    <h1><span>малярные работы</span> <strong>пескоструйная обработка</strong> <span>сварные работы</span></h1>
+                    <ul class="marketing-list">
+                        <li>Быстро</li>
+                        <li>Качественно</li>
+                        <li>Недорого</li>
+                    </ul>
                 </div>
+            </div>
+        </section>
 
-                <div class="advantages_wrap">
-                    <div class="container">
-                        <div class="advantages">
-                            <h2>Преимущества работы с нами</h2>
-                            <div class="advantages_elems">
-                                <div class="advantages_elem">
-                                    <div class="advantages_elem-img"></div>
-                                    <div class="advantages_elem-text">
-                                        <p>Уникальный высококачественный комплекс оборудования</p>
-                                    </div>
-                                </div>
-                                <div class="advantages_elem">
-                                    <div class="advantages_elem-img"></div>
-                                    <div class="advantages_elem-text">
-                                        <p>Выезд на любой объект в пределах Нижегородской области</p>
-                                    </div>
-                                </div>
-                                <div class="advantages_elem">
-                                    <div class="advantages_elem-img"></div>
-                                    <div class="advantages_elem-text">
-                                        <p>Хорошие скидки постоянным клиентам и на большие объёмы работ</p>
-                                    </div>
-                                </div>
+        <section class="question_wrap">
+            <div class="container">                
+            <div class="question_pers"></div>
+                <div class="question">
+                    <h2>Коротко о главном</h2>
+                    <div class="question-elem">
+                        <div class="question-title">
+                            <h4>В каких регионах мы работаем?</h4>
+                        </div>
+                        <div class="question-desc">
+                            <p>Основная территория - Нижний Новгород и Нижегородская область.</p>
+                            <p>Выезд в соседние регионы возможен и обсуждается непосредственно с менеджерами, перед заключением договора.</p>
+                        </div>
+                    </div>
+                    <div class="question-elem">
+                        <div class="question-title">
+                            <h4>Как проводится пескоструйная очистка?</h4>
+                        </div>
+                        <div class="question-desc">
+                            <p>Под большим давлением, со скоростью до 400 м/сек подаётся абразив. В результате столкновения - поверхность становится чистой и шероховатой. Степень очистки регулируется сменой абразивных материалов.</p>
+                        </div>
+                    </div>
+                    <div class="question-elem">
+                        <div class="question-title">
+                            <h4>Можем ли мы после очистки выполнить покраску?</h4>
+                        </div>
+                        <div class="question-desc">
+                            <p>Да, конечно!</p>
+                            <p>Мы выполняем малярные работы любой сложности, методом безвоздушной окраски.</p>
+                        </div>
+                    </div>
+                    <div class="question-elem">
+                        <div class="question-title">
+                            <h4>Возможна ли обработка в цехе?</h4>
+                        </div>
+                        <div class="question-desc">
+                            <p>Конечно!</p>
+                            <p>Помимо работы на территории заказчика, мы одни из немногох в нашем регионе можем предложить собственное специально подготовленное помещение!</p>
+                        </div>
+                    </div>
+                    <div class="question-elem">
+                        <div class="question-title">
+                            <h4>Как к нам записаться?</h4>
+                        </div>
+                        <div class="question-desc">
+                            <p>Любым удобным способом, Вы можете позвонить нам по телефону, написать сообщение в мессенджеры или оставить заявку на обратный звонок.</p>
+                            <p>Просто нажмите на один из вариантов.</p>
+                            <div class="question-desc-feedback">                                
+                                <a class="question-desc-feedback-call" href="tel:+79302833755">8-(930)-283-37-55</a>
+                                <a class="question-desc-feedback-soc-vb" href="https://viber.click/79302833755" target="_blank"></a>
+                                <a class="question-desc-feedback-soc-wt" href="https://wa.me/79302833755" target="_blank"></a>
+                                <button class="btn-form-open question-desc-feedback-btn">оставить заявку</button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="description_wrap">
-                    <div class="container">
-                        <div class="description">
-                            <table class="des_table">
-                                <thead>
-                                    <tr>
-                                        <td colspan="2">
-                                            <h2>Виды выполняемых работ</h2>
-                                        </td>
-                                    </tr>
-                                </thead>
-                                <tbody class="des_tab_body">
-                                    <tr>
-                                        <td class="des_img">
-                                            <div class="des_img-title">
-                                                <h3>Обработка бетона, камня, брусчатки</h3>
-                                            </div>
-                                        </td>
-                                        <td class="des_text">
-                                            <p>Одна из наиболее распространенных услуг, с помощью давления воздуха и абразивных материалов можно очистить бетон любой марки, а также ЖБИ изделия и другие пористые поверхности.</p>
-                                            <p>Это быстрый, эффективный и относительно недорогой способ подготовить поверхность к последующей отделке противокоррозионными смесями или декоративными материалами.</p>
-                                            <button class="btn_feedback-des btn-rhomb btn-form-open"><span>Заказать обработку</span></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="des_img">
-                                            <div class="des_img-title">
-                                                <h3>Очистка металлоконструкций</h3>
-                                            </div>
-                                        </td>
-                                        <td class="des_text">
-                                            <p>Один из самых бюджетных вариантов зачистки металла, поскольку затраты на работу и материал намного меньше, чем при использовании химических составов.</p>
-                                            <p>Новейшие технологии очистки позволяют не навредить металлу и снять только слой окисления, не воздействуя на общую структуру материала.</p>
-                                            <button class="btn_feedback-des btn-rhomb btn-form-open"><span>Заказать очистку</span></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="des_img">
-                                            <div class="des_img-title">
-                                                <h3>Обработка дерева</h3>
-                                            </div>
-                                        </td>
-                                        <td class="des_text">
-                                            <p>Увеличить срок эксплуатации деревянного дома и надолго сохранить его первоначальный вид позволяет пескоструйная обработка сруба.</p>
-                                            <p>Правильная шлифовка сруба предохраняет деревянное строение от последующего появления плесени, делает его прочнее, а так же повышает адгезию защитных материалов и снижает их потребление.</p>
-                                            <button class="btn_feedback-des btn-rhomb btn-form-open"><span>Заказать обработку</span></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="des_img">
-                                            <div class="des_img-title">
-                                                <h3>Обработка кирпича</h3>
-                                            </div>
-                                        </td>
-                                        <td class="des_text">
-                                            <p>Высокоэффективный способ очистить поверхность от разного рода загрязнений, строительных материалов, лакокрасочных изделий, нефтепродуктов и других суспензий.</p>
-                                            <p>Высокая скорость очистки является неоспоримым плюсом - в 7-10 раз быстрее, чем любая другая очистка.</p>
-                                            <button class="btn_feedback-des btn-rhomb btn-form-open"><span>Заказать обработку</span></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="des_img">
-                                            <div class="des_img-title">
-                                                <h3>Очистка оборудования и спецтехники</h3>
-                                            </div>
-                                        </td>
-                                        <td class="des_text">
-                                            <p>Отдельное направление нашей компании, специально обученые мастера знают все тонкости данной задачи и блестяще с ней справляются!</p>
-                                            <p>Подробную информацию можно узнать на нашем сайте <a href="https://gsnn.ru/">gsnn.ru</a></p>
-                                            <button class="btn_feedback-des btn-rhomb btn-form-open"><span>Заказать очистку</span></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="des_img">
-                                            <div class="des_img-title">
-                                                <h3>Антикоррозийная защита и покраска поверхностей</h3>
-                                            </div>
-                                        </td>
-                                        <td class="des_text">
-                                            <p>Технология окраски агрегатов и новостроек - неотъемлемая часть возможности их долгосрочной эксплуатации.</p>
-                                            <p>Наши мастера профессионалы в сфере высококачественной окраске и обработке защитными покрытиями.</p>
-                                            <button class="btn_feedback-des btn-rhomb btn-form-open"><span>Заказать покраску</span></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="des_img">
-                                            <div class="des_img-title">
-                                                <h3>Браширование (состаривание) дерева</h3>
-                                            </div>
-                                        </td>
-                                        <td class="des_text">
-                                            <p>Добиться выразительной текстуры дерева можно с помощью технологии браширования.</p>
-                                            <p>Удалить мягкие волокона с поверхности деревянных изделий можно различными способами, самым простым и легким является использование пескоструйного оборудования, с его помощью можно существенно ускорить этот процесс.</p>
-                                            <button class="btn_feedback-des btn-rhomb btn-form-open"><span>Заказать браширование</span></button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+        <section class="works_wrap">
+            <div class="works_wrap-fon"></div>
+            <div class="container">     
+                <h2>Виды выполняемых работ</h2>
+                <div class="works">               
+                    <div class="works_elem">
+                        <div class="works_elem-title">
+                            <h3>Обработка бетона, камня, брусчатки</h3>
+                        </div>
+                        <div class="works_elem-desc">
+                            <p>Одна из наиболее распространенных услуг, с помощью давления воздуха и абразивных материалов можно очистить бетон любой марки, а также ЖБИ изделия и другие пористые поверхности.</p>
+                            <p>Это быстрый, эффективный и относительно недорогой способ подготовить поверхность к последующей отделке противокоррозионными смесями или декоративными материалами.</p>
+                            <div class="works_elem-desc-border"></div>
+                        </div>
+                        <div class="works_elem-img"> </div>
+                    </div>
+                    <div class="works_elem">
+                        <div class="works_elem-title">
+                            <h3>Очистка металлоконструкций</h3>
+                        </div>
+                        <div class="works_elem-desc">
+                            <p>Один из самых бюджетных вариантов зачистки металла, поскольку затраты на работу и материал намного меньше, чем при использовании химических составов. </p>
+                            <p>Новейшие технологии очистки позволяют не навредить металлу и снять только слой окисления, не воздействуя на общую структуру материала.</p>
+                            <div class="works_elem-desc-border"></div>
+                        </div>
+                        <div class="works_elem-img"> </div>
+                    </div>
+                    <div class="works_elem">
+                        <div class="works_elem-title">
+                            <h3>Обработка дерева</h3>
+                        </div>
+                        <div class="works_elem-desc">
+                            <p>Увеличить срок эксплуатации деревянного дома и надолго сохранить его первоначальный вид позволяет пескоструйная обработка сруба.</p>
+                            <p>Правильная шлифовка сруба предохраняет деревянное строение от последующего появления плесени, делает его прочнее, а так же повышает адгезию защитных
+                                материалов и снижает их потребление.</p>
+                            <div class="works_elem-desc-border"></div>
+                        </div>
+                        <div class="works_elem-img"> </div>
+                    </div>
+                    <div class="works_elem">
+                        <div class="works_elem-title">
+                            <h3>Обработка кирпича</h3>
+                        </div>
+                        <div class="works_elem-desc">
+                            <p>Высокоэффективный способ очистить поверхность от разного рода загрязнений, строительных материалов, лакокрасочных изделий, нефтепродуктов и других суспензий.</p>
+                            <p>Высокая скорость очистки является неоспоримым плюсом - в 7-10 раз быстрее, чем любая другая очистка.</p>
+                            <div class="works_elem-desc-border"></div>
+                        </div>
+                        <div class="works_elem-img"> </div>
+                    </div>
+                    <div class="works_elem">
+                        <div class="works_elem-title">
+                            <h3>Очистка оборудования и спецтехники</h3>
+                        </div>
+                        <div class="works_elem-desc">
+                            <p>Отдельное направление нашей компании, специально обученые мастера знают все тонкости данной задачи и блестяще с ней справляются!</p>
+                            <p>Подробную информацию можно узнать на нашем сайте <a href="https://gsnn.ru/">gsnn.ru</a></p>
+                            <div class="works_elem-desc-border"></div>
+                        </div>
+                        <div class="works_elem-img"> </div>
+                    </div>
+                    <div class="works_elem">
+                        <div class="works_elem-title">
+                            <h3>Антикоррозийная защита и покраска поверхностей</h3>
+                        </div>
+                        <div class="works_elem-desc">
+                            <p>Технология окраски агрегатов и новостроек - неотъемлемая часть возможности их долгосрочной эксплуатации.</p>
+                            <p>Наши мастера профессионалы в сфере высококачественной окраске и обработке защитными покрытиями.</p>
+                            <div class="works_elem-desc-border"></div>
+                        </div>
+                        <div class="works_elem-img"> </div>
+                    </div>
+                    <div class="works_elem">
+                        <div class="works_elem-title">
+                            <h3>Браширование (состаривание) дерева</h3>
+                        </div>
+                        <div class="works_elem-desc">
+                            <p>Добиться выразительной текстуры дерева можно с помощью технологии браширования.
+                            </p>
+                            <p>Удалить мягкие волокона с поверхности деревянных изделий можно различными способами, самым простым и легким является использование пескоструйного оборудования, с его помощью можно существенно ускорить этот процесс.</p>
+                            <div class="works_elem-desc-border"></div>
+                        </div>
+                        <div class="works_elem-img"> </div>
+                    </div>
+                    <div class="works_elem">
+                        <div class="works_elem-title">
+                            <h3>Аренда пескоструйного оборудования</h3>
+                        </div>
+                        <div class="works_elem-desc">
+                            <p> Прокат аппарата подобного типа позволит быстро и просто произвести абразивную обработку большого количества различных поверхностей.</p>
+                            <p> Больше не нужно работать вручную. Мы поможет сэкономить вам свои силы и время.</p>
+                            <div class="works_elem-desc-border"></div>
+                        </div>
+                        <div class="works_elem-img"> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages_wrap">
+            <div class="container">
+                <div class="advantages">
+                    <h2>Преимущества работы с нами</h2>
+                    <div class="advantages_elems">
+                        <div class="advantages_elem">
+                            <div class="advantages_elem-img"></div>
+                            <div class="advantages_elem-text">
+                                <p>Уникальный высококачественный комплекс оборудования</p>
+                            </div>
+                        </div>
+                        <div class="advantages_elem">
+                            <div class="advantages_elem-img"></div>
+                            <div class="advantages_elem-text">
+                                <p>Выезд на любой объект в пределах Нижегородской области</p>
+                            </div>
+                        </div>
+                        <div class="advantages_elem">
+                            <div class="advantages_elem-img"></div>
+                            <div class="advantages_elem-text">
+                                <p>Хорошие скидки постоянным клиентам и на большие объёмы работ</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="questions_wrap">
-                    <div class="container">
-                        <div class="questions">
+        <section class="carousel_wrap">
+            <h2>Фото наших работ</h2>
+            <div class="carousel">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-1.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-2.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-3.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-4.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-5.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-6.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-7.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-1.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-8.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-9.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-10.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-11.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-12.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-13.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-14.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/carousel-15.jpg" alt="Фото до и после нашей работы">
+                      </div>
+                    </div>
+                </div>                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
 
-                        </div>
+        <section class="about_us_wrap">
+            <div class="container">
+                <div class="about_us">
+                    <div class="about_us-title">
+                        <h2>На рынке более 10 лет</h2>
+                    </div>
+                    <div class="about_us-desc">
+                        <p>Здравствуйте друзья, я и моя команда занимаемся профессиональной пескоструйной обработкой любых поверхностей дерева, металлоконструкций, бетона, кирпича, камня и многих других.</p>
+                        <p>Но и как может показаться на первый взгляд - раз мол вы ребята обрабатываете все подряд и распыляетесь на все, значит и знания ваши в вашем ремесле поверхностны и возможно недостаточно квалифицированы.</p>
+                        <p>Хочу вас уверить это не так, у нас несколько бригад специализирующихся на своих узких направлениях которые мы смогли объединить в группы, например – всем что связано с деревом (обработка бруса, бревна, оц. бревна, доски, вагонки, браширование разной степени и т.д.) занимаются одна часть команды которая ни когда не делает обработку металла или камня и на оборот.</p>
+                        <p>Также мы используем собственное оборудование в своей работе что позволяет нам быть очень гибкими в своей ценовой политике.</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="main_painting"></section>
+        <section class="cash_wrap">
+            <div class="container">
+                <h2>Стоимость работ и проката</h2>
+                <div class="cash">
+                    <div class="cash-elem">
+                        <h3>Пескоструйная очистка поверхностей</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th> Наименование поверхности</th>
+                                    <th> Стоимость пескоструйной очистки  (м<sup>2</sup>)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Обработка поверхностей после пожара (удаление гари и копоти)</td>
+                                    <td>170₽</td>
+                                </tr>
+                                <tr>
+                                    <td>удаление ЛКП с дерева (не старые дома)</td>
+                                    <td>170₽</td>
+                                </tr>
+                                <tr>
+                                    <td>удаление ЛКП с дерева старые дома</td>
+                                    <td>150₽</td>
+                                </tr>
+                                <tr>
+                                    <td>браширование (состаривание дерева)  </td>
+                                    <td>190₽</td>
+                                </tr>
+                                <tr>
+                                    <td>деревянный сруб из оцилиндрованного бревна	</td>
+                                    <td>160₽</td>
+                                </tr>
+                                <tr>
+                                    <td>деревянный сруб из бруса</td>
+                                    <td>160₽</td>
+                                </tr>
+                                <tr>
+                                    <td>деревянный сруб из рубленного бревна под рубанок</td>
+                                    <td>160₽</td>
+                                </tr>
+                                <tr>
+                                    <td>деревянный сруб из рубленного бревна окореный</td>
+                                    <td>220₽</td>
+                                </tr>
+                                <tr>
+                                    <td>удаление атмосферных загрязнений </td>
+                                    <td>140₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Кирпичные стены</td>
+                                    <td>180₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Бетонные стены / полы</td>
+                                    <td>180₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Каменные поверхности</td>
+                                    <td>180₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Металические поверхности</td>
+                                    <td>350₽</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Пескоструйная обработка с выездом на смену</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Аренда оборудования</th>
+                                    <th>Услуга пескоструйщиков</th>
+                                    <th>Стоимость абразива</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10.500₽</td>
+                                    <td>8.000₽</td>
+                                    <td>3.500₽</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="cash-elem">
+                        <h3>ПОКРАСКа И НАНЕСЕНИЕ ОГНЕЗАЩИТЫ</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th> Наименование изделия</th>
+                                    <th> Единицы измерения</th>
+                                    <th> Цена</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Покраска красками по шкале RAL</td>
+                                    <td>м<sup>2</sup></td>
+                                    <td>150₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Покраска антиком,металликом,хромом</td>
+                                    <td>м<sup>2</sup></td>
+                                    <td>250₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Покраска нестандартными красками</td>
+                                    <td>м<sup>2</sup></td>
+                                    <td>200₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Покраска профиля менее 100мм</td>
+                                    <td>м<sup>пог</sup></td>
+                                    <td>21₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Покраска мет.дверей</td>
+                                    <td>м<sup>2</sup></td>
+                                    <td>650₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Покраска мелких изделий</td>
+                                    <td>шт</td>
+                                    <td>30₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Единичная загрузка</td>
+                                    <td>шт</td>
+                                    <td>2500₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Наценка за срочность</td>
+                                    <td>%</td>
+                                    <td>50₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Наценка за обьемные изделия</td>
+                                    <td>%</td>
+                                    <td>50₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Наценка за сложность изделий</td>
+                                    <td>%</td>
+                                    <td>50₽</td>
+                                </tr>
+                                <tr>
+                                    <td>Наценка за вес изделия</td>
+                                    <td>%</td>
+                                    <td>50₽</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="cash-elem">
+                        <h3>АРЕНДа КОМПРЕССОРА С ОБОРУДОВАНИЕМ</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th> кол-во</th>
+                                    <th> Наименование оборудования</th>
+                                    <th> Стоимость рабочей смены</th>
+                                    <th> Стоимость продления (в&#160час)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>молоток (МОП2)</td>
+                                    <td>6000₽</td>
+                                    <td>850₽</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>молоток (МОП2)</td>
+                                    <td>7800₽</td>
+                                    <td>1100₽</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>молоток (МОП2)*</td>
+                                    <td>8800₽</td>
+                                    <td>1250₽</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>молоток (МОП2)*</td>
+                                    <td>9800₽</td>
+                                    <td>1400₽</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>молоток (МОП2)*</td>
+                                    <td>10800₽</td>
+                                    <td>1550₽</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>молоток (МОП4)*</td>
+                                    <td>7200₽</td>
+                                    <td>1000₽</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>молоток (МОП4)*</td>
+                                    <td>8200₽</td>
+                                    <td>1170₽</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>молоток (МОП4)*</td>
+                                    <td>9200₽</td>
+                                    <td>1300₽</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>молоток Atlas Copco TEX 07 PE</td>
+                                    <td>7800₽</td>
+                                    <td>1100₽</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>молоток Atlas Copco TEX 07 PE</td>
+                                    <td>8800₽</td>
+                                    <td>1250₽</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>молоток Atlas Copco TEX 07 PE</td>
+                                    <td>10200₽</td>
+                                    <td>1450₽</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>бетонолом (Б1,Б2,Б3)</td>
+                                    <td>7800₽</td>
+                                    <td>1120₽</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>бетонолом (Б1,Б2,Б3)*</td>
+                                    <td>9200₽</td>
+                                    <td>1300₽</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>бетонолом (Б1,Б2,Б3)*</td>
+                                    <td>10200₽</td>
+                                    <td>1500₽</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>бетонолом Atlas Copco TEX P60</td>
+                                    <td>9200₽</td>
+                                    <td>1310₽</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>бетонолом Atlas Copco 230PE</td>
+                                    <td>9200₽</td>
+                                    <td>1310₽</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>бетонолом Atlas Copco RTEX</td>
+                                    <td>9200₽</td>
+                                    <td>1310₽</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>бетонолом Atlas Copco</td>
+                                    <td>10800₽</td>
+                                    <td>1540₽</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>бетонолом Atlas Copco</td>
+                                    <td>12400₽</td>
+                                    <td>1770₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>1 (МОП2) – 1 (МОП4)</td>
+                                    <td>7000₽</td>
+                                    <td>1000₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>2 (МОП2) – 1 (МОП4)</td>
+                                    <td>8000₽</td>
+                                    <td>1140₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>3 (МОП2) – 1 (МОП4)*</td>
+                                    <td>9000₽</td>
+                                    <td>1290₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>2 (МОП2) – 2 (МОП4)*</td>
+                                    <td>8400₽</td>
+                                    <td>1200₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>1 (МОП2) – 2 (МОП4)*</td>
+                                    <td>8000₽</td>
+                                    <td>1140₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>1 (МОП2) – 3 (МОП4)*</td>
+                                    <td>9200₽</td>
+                                    <td>1310₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>1 (Б1,Б2,Б3) — 1 (МОП2)</td>
+                                    <td>7200₽</td>
+                                    <td>1030₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>1 (Б1,Б2,Б3) — 2 (МОП2)*</td>
+                                    <td>7800₽</td>
+                                    <td>1110₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>1 (Б1,Б2,Б3) — 3 (МОП2)*</td>
+                                    <td>9000₽</td>
+                                    <td>1290₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>1 (Б1,Б2,Б3) — 1 (МОП4)*</td>
+                                    <td>7800₽</td>
+                                    <td>1110₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>1 (Б1,Б2,Б3) — 2 (МОП4)*</td>
+                                    <td>9200₽</td>
+                                    <td>1310₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>1 (Б1,Б2,Б3) — 3 (МОП4)*</td>
+                                    <td>10200₽</td>
+                                    <td>1460₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>2 (Б1,Б2,Б3) — 1 (МОП2)*</td>
+                                    <td>8800₽</td>
+                                    <td>1260₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>2 (Б1,Б2,Б3) — 2 (МОП2)*</td>
+                                    <td>9800₽</td>
+                                    <td>1400₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>3 (Б1,Б2,Б3) — 1 (МОП2)*</td>
+                                    <td>10200₽</td>
+                                    <td>1460₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>2 (Б1,Б2,Б3) — 1 (МОП4)*</td>
+                                    <td>8800₽</td>
+                                    <td>1260₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>2 (Б1,Б2,Б3) — 2 (МОП4)*</td>
+                                    <td>10400₽</td>
+                                    <td>1490₽</td>
+                                </tr>
+                                <tr>
+                                    <td>микс</td>
+                                    <td>3 (Б1,Б2,Б3) — 1 (МОП4)*</td>
+                                    <td>10400₽</td>
+                                    <td>1490₽</td>
+                                </tr>                                
+                                <tr>
+                                    <td colspan="2">Компрессор с пескоструйным аппаратом и защитным костюмом*</td>
+                                    <td>10500₽</td>
+                                    <td>1500₽</td>
+                                </tr>                                
+                                <tr>
+                                    <td colspan="2">Опрессовка*</td>
+                                    <td>8200₽</td>
+                                    <td>1175₽</td>
+                                </tr>                                
+                                <tr>
+                                    <td colspan="2">Обдувка*</td>
+                                    <td>8200₽</td>
+                                    <td>1175₽</td>
+                                </tr>                                
+                                <tr>
+                                    <td colspan="2">Подключение компрессора к промышленному оборудованию и спецтехнике предоставляется с масленкой Atlas Copco для смазки оборудования *</td>
+                                    <td>8800₽</td>
+                                    <td>1260₽</td>
+                                </tr>                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
     </main>
@@ -287,7 +827,7 @@
             <a href="mailto:developer@don-dragon.ru">developer@don-dragon.ru</a>
         </div>
 
-        <div class="form_wrap">
+        <section class="form_wrap">
             <div class="form_popap">
                 <form action="#" id="form" class="form__body">
                     <h2 class="form__title">Оставить заявку</h2>
@@ -310,16 +850,17 @@
                     <p class="policity"><sup>*</sup>Нажимая на кнопку "Отправить", я даю согласие на обработку
                         персональных&nbspданных </p>
 
-                    <button class="form__button btn-rhomb" type="submit"><span>отправить</span></button>
+                    <button class="form__button btn-rhomb" ><span>отправить</span></button>
                     <button class="close_form">✙</button>
 
                 </form>
             </div>
-        </div>
+        </section>
 
     </footer>
 
     <script src="script/jq.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script/index.js"></script>
 </body>
 

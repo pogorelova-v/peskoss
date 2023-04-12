@@ -14,7 +14,7 @@
 
   
 .op {
-    border: 1px solid #eb9a9a;
+    border: 1px solid #3cffef;
 }
 
 .d-f {
@@ -30,14 +30,27 @@
     position: fixed;
 }
 
+
 @keyframes mail_me {
     0%{          
-        filter: invert(0%);
+        filter: hue-rotate(0%);
     }
     50%{          
-        filter: invert(100%);
+        filter: hue-rotate(-20deg);
     }
     100%{          
-        filter: invert(0%);
+        filter: hue-rotate(0%);
+    }
+}
+
+@keyframes scale_title {
+    0%{          
+        transform: scale(1);
+    }
+    50%{          
+        transform: scale(1.05);
+    }
+    100%{          
+        transform: scale(1);
     }
 }

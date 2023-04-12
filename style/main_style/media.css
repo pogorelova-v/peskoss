@@ -126,31 +126,12 @@
 
     .header_menu {
         display: none;
-        /*!!!!!!!!!!*/
-    }
-
-    
-    .banner_wrap{
-        flex-direction: column;
-    }
-    .banner_sand,
-    .banner_paint{
-        width: 100%;
-        border-left: none;
-        border-right: none;
     }
 
     .advantages_elems{
         flex-direction: column;
         gap: 3rem;
     }
-
-    .des_tab_body tr,
-    .des_tab_body tr:nth-child(2n){
-        flex-direction: column;
-        text-align: center;
-    }
-
     footer .container {
         flex-direction: column;
     }
@@ -172,6 +153,5 @@
     .footer_contact-tel {
         margin-bottom: 1rem;
     }
-
 
 }
