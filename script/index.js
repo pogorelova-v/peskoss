@@ -20,34 +20,11 @@ $('#formMessage').on('input', function(){
 	this.style.height = (this.scrollHeight + 6) + 'px'; 
 });
 
-//-----------------------Бургер меню
+//-----------------------Блок вопросов
 
-$('.header_menu_burg-btn').click(function () {
-    $('.header_menu_burg-btn').toggleClass("burg-open");
-    $('.header_menu_burg').slideToggle();
-})
-$('main').click(function () {
-    $('.header_menu_burg-btn').removeClass("burg-open");
-    $('.header_menu_burg').slideUp();
-})
-$('.header_menu_burg-list').children('li').click(function () {
-    $('.header_menu_burg-btn').removeClass("burg-open");
-    $('.header_menu_burg').slideUp();
-})
 
-if ($(window).width() < 768) {
-    let heightBurg = $('.header_menu_burg-btn_wrap').offset().top;
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > heightBurg) {
-            $('.header_menu_burg-btn_wrap').css('position', 'fixed');
-            $('.header_menu_burg').css('position', 'fixed');
-        }
-        else if ($(this).scrollTop() < heightBurg) {
-            $('.header_menu_burg-btn_wrap').css('position', 'absolute');
-            $('.header_menu_burg').css('position', 'absolute');
-        }
-    });
-}
+$('.question-desc').eq(1).slideDown();
+$('.question-title').eq(1).addClass('activ');
 
 $(document).on('click', '.question-title', function(){
     let indQues = $(this).index('.question-title');
@@ -55,7 +32,6 @@ $(document).on('click', '.question-title', function(){
         $('.question-desc').eq(indQues).slideUp();
         $('.question-title').eq(indQues).removeClass('activ');
     } else {
-        
         $('.question-desc').slideUp();
         $('.question-title').removeClass('activ');
 
@@ -73,3 +49,7 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  //   wow
+
+  new WOW().init();
